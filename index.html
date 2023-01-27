@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Roboto 400/500 + Poppins 400/500/600 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <header>
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+        </header>
+        <form action="">
+          <div class="login">
+            <div>
+              <img src="./images/log-in.svg" alt="log-in" />
+              <h1>Faça seu login</h1>
+            </div>
+            <p>Entre com suas informações de cadastro.</p>
+          </div>
+          <div class="input">
+            <label for="email">Email</label>
+            <div class="email">
+              <img src="./images/mail.svg" alt="logo-mail" id="mail" />
+              <input type="text" id="email" placeholder="Digite seu e-mail" />
+            </div>
+          </div>
+          <div class="input">
+            <label for="password">Senha</label>
+            <div class="password">
+              <div>
+                <img src="./images/lock.svg" alt="logo-lock" />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              <div>
+                <img src="./images/eye.svg" alt="eye" />
+              </div>
+            </div>
+          </div>
+          <div class="help">
+            <div>
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Lembre-me</label>
+            </div>
+            <div>
+              <p class="recover">Esqueci minha senha</p>
+            </div>
+          </div>
+          <button type="button">Entrar</button>
+          <p class="register">
+            Não tem uma conta? <strong>Registre-se</strong>
+          </p>
+        </form>
+      </div>
+      <div class="image"></div>
+    </div>
+  </body>
+</html>

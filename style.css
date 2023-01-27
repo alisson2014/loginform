@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+body {
+  background: var(--background) no-repeat center/cover;
+}
+
+.container {
+  display: flex;
+}
+
+.image {
+  width: 50vw;
+  height: 100vh;
+  background: url(./images/side-image.jpg) no-repeat right/cover;
+  position: fixed;
+  right: 0;
+}
+
+.logo {
+  margin-top: 36px;
+  margin-left: 30px;
+}
+
+form {
+  margin: 72px 76px 72px;
+  padding: 55px 100px;
+  width: 572px;
+  height: 512px;
+  border-radius: 5px;
+  background-color: var(--form-background);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login div {
+  display: flex;
+  gap: 10px;
+}
+
+.login div h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-title);
+}
+
+.login p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-base);
+  margin-left: 4px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-base);
+}
+
+.input input {
+  border: 0;
+  outline: 0;
+  background: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-base);
+}
+
+.email {
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 4px;
+  border: 2px solid var(--text-base);
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 4px;
+  border: 2px solid var(--text-base);
+
+  width: 100%;
+  height: 44px;
+  padding: 15px 10px;
+}
+
+.password div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.help {
+  display: flex;
+  justify-content: space-between;
+}
+
+.help div label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-base);
+}
+
+.help div p.recover {
+  font-family: "Poppins", sans-serif;
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+form button {
+  background-color: var(--primary-color);
+  border: 0;
+  border-radius: 5px;
+
+  cursor: pointer;
+  padding: 15px 40px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #473404;
+}
+
+.register {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: .875rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
