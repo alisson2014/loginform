@@ -156,9 +156,6 @@ form {
   cursor: pointer;
 }
 
-#remember {
-  color: var(--primary-color);
-}
 
 form button {
   background-color: var(--primary-color);
@@ -188,10 +185,11 @@ form button {
     display: none;
   }
 
+
   form {
-    margin: 0 auto;
-    width: 500px;
-    height: 350px;
+    margin: 0;
+    padding: 25px;
+    width: 100vw;
     background: none;
   }
 }
