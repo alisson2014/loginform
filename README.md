@@ -18,7 +18,7 @@ Desafio do discover, promovido pela Rocketseat para ensino de tecnologias WEB.
 <br>
 
 <p align="center">
-  <img alt="Login form" src=".github/capa.jpg" width="100%">
+  <img alt="Login form" src=".github/Capa.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
