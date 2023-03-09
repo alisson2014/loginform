@@ -5,6 +5,8 @@
 }
 
 :root {
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
   --text-base: #afb6c2;
   --text-title: #d4ccb6;
   --background: #191816;
@@ -16,84 +18,86 @@ body {
   background: var(--background) no-repeat center/cover;
 }
 
-.container {
-  display: flex;
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
 
 .image {
-  width: 50vw;
   height: 100vh;
   background: url(./images/side-image.jpg) no-repeat right/cover;
-  position: fixed;
-  right: 0;
 }
 
-.logo {
-  margin-top: 36px;
-  margin-left: 30px;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  position: fixed;
+  top: 36px;
+  left: 36px;
 }
 
 form {
-  margin: 72px 76px;
-  padding: 55px 100px;
-  width: 572px;
-  height: 512px;
+  padding: 55px 110px;
+  width: 543.4px;
+  height: 486.4px;
   border-radius: 5px;
   background-color: var(--form-background);
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 
 .login {
+  height: 64px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .login div {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
   gap: 10px;
 }
 
 .login div h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font: normal 600 1.5rem var(--font-poppins);
   color: var(--text-title);
 }
 
 .login p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
+  font: normal 500 1rem var(--font-roboto);
   color: var(--text-base);
-  margin-left: 4px;
 }
 
 .input {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2.5px;
 }
 
 .input label {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
+  font: normal 500 1rem var(--font-poppins);
   color: var(--text-base);
 }
 
 .input input {
-  border: 0;
-  outline: 0;
-  background: 0;
+  border: none;
+  outline: none;
+  background: none;
   width: 100%;
 
-  font-family: "Roboto", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
+  font: normal 400 0.875rem var(--font-roboto);
   color: var(--text-base);
 }
 
@@ -105,17 +109,16 @@ form {
 .email {
   width: 100%;
   height: 44px;
-  padding: 10px;
+  padding: 8px 10px;
 
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 10px;
 
   border-radius: 4px;
   border: 2px solid var(--text-base);
 }
-
-.input input:focus {}
 
 .password {
   display: flex;
@@ -127,12 +130,11 @@ form {
 
   width: 100%;
   height: 44px;
-  padding: 15px 10px;
+  padding: 8px 10px;
 }
 
 .password div {
   display: flex;
-  align-items: center;
   gap: 10px;
 }
 
@@ -141,55 +143,54 @@ form {
   justify-content: space-between;
 }
 
+.help div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
 .help div label {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
+  font: normal 500 1rem var(--font-roboto);
   color: var(--text-base);
 }
 
 .help div p.recover {
-  font-family: "Poppins", sans-serif;
-  font-size: .875rem;
-  font-weight: 600;
+  font: normal 600 0.875rem var(--font-poppins);
   color: var(--primary-color);
   cursor: pointer;
 }
 
 
 form button {
+  width: 321px;
+  padding: 12px 36px;
   background-color: var(--primary-color);
   border: 0;
   border-radius: 5px;
-
-  cursor: pointer;
-  padding: 15px 40px;
-
-  font-family: "Poppins", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font: normal 600 1.125rem var(--font-poppins);
   color: #473404;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .register {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: .875rem;
+  font: normal 400 0.875rem var(--font-poppins);
   color: var(--primary-color);
+  text-align: center;
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 880px) {
   .image {
     display: none;
   }
 
+  .gridContainer {
+    grid-template-columns: 100%;
+  }
 
   form {
-    margin: 0;
-    padding: 25px;
-    width: 100vw;
-    background: none;
+    margin-top: 30px;
+    background-color: var(--background);
   }
 }

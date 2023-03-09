@@ -16,16 +16,16 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="gridContainer">
       <div class="main">
         <header>
-          <img src="./images/logo.svg" alt="logo" class="logo" />
+          <img src="./images/logo.svg" alt="logo" />
         </header>
         <form action="">
           <div class="login">
             <div>
-              <img src="./images/log-in.svg" alt="log-in" />
               <h1>Faça seu login</h1>
+              <img src="./images/log-in.svg" alt="log-in" />
             </div>
             <p>Entre com suas informações de cadastro.</p>
           </div>
@@ -45,16 +45,14 @@
             <label for="password">Senha</label>
             <div class="password">
               <div>
-                <img src="./images/lock.svg" alt="logo-lock" />
+                <img src="./images/lock.svg" alt="logo-lock" id="lock" />
                 <input
                   type="password"
                   id="password"
                   placeholder="Digite sua senha"
                 />
               </div>
-              <div>
-                <img src="./images/eye.svg" alt="eye" />
-              </div>
+              <img src="./images/eye.svg" alt="eye" />
             </div>
           </div>
           <div class="help">
@@ -66,7 +64,7 @@
               <p class="recover">Esqueci minha senha</p>
             </div>
           </div>
-          <button type="button">Entrar</button>
+          <button id="btnLogin">Entrar</button>
           <p class="register">
             Não tem uma conta? <strong>Registre-se</strong>
           </p>
@@ -74,5 +72,6 @@
       </div>
       <div class="image"></div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
